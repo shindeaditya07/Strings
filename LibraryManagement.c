@@ -55,8 +55,7 @@ int main(){
                  		else{
                        			printf ("Enter a valid option\n");
                        			i--;
-                                }
-                     
+                                }                     
                		}
             		fclose(outfile);
             		fclose(infile);
@@ -69,9 +68,7 @@ int main(){
 			fclose(infile);
 			fclose(outfile);
           	}
-
-          else if(choice==3)
-            {
+          else if(choice==3){
                float percentage;             
                long int cprn;                
                int flag=0;
@@ -81,7 +78,7 @@ int main(){
 			   while(fread(&temp, sizeof(struct student),1,infile))    
 			     {
 			 	     num++;
-		         }
+		             }
                printf("Enter the prn of the student: ");
                scanf("%lu",&cprn);
                fseek(infile, 0, SEEK_SET);
@@ -95,7 +92,6 @@ int main(){
                            flag=1;
                            break;
                        }
-                       
                  }
                 if(flag==1)               
                 {
